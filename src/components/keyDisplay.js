@@ -50,7 +50,7 @@ const KeyDisplay = () => {
   }
 
   useEffect(() => {
-    const interval = setInterval(updateColor, 3000);
+    const interval = setInterval(updateColor, 1000);
 
     return () => {
       clearInterval(interval);

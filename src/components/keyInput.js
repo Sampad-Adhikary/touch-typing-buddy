@@ -5,7 +5,7 @@ const KeyInput = () => {
   const [keyPressCount, setKeyPressCount] = useState(0);
   const [matchCount, setMatchCount] = useState(0);
   const [enteredLetter, setEnteredLetter] = useState('');
-  const [remainingTime, setRemainingTime] = useState(30);
+  const [remainingTime, setRemainingTime] = useState(300);
 
   const location = useLocation();
   const navigate = useNavigate();

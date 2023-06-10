@@ -1,4 +1,3 @@
-import Footer from "../components/footer";
 import KeyDisplay from "../components/keyDisplay";
 import KeyInput from "../components/keyInput";
 

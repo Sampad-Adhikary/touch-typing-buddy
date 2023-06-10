@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Footer from '../components/footer';
 
@@ -8,13 +8,15 @@ function Result(){
   const keyPressCount = searchParams.get('keyPressCount');
   const matchCount = searchParams.get('matchCount');
   const accuracy = ((matchCount/keyPressCount)*100).toFixed(2);
-  const[resultMessage,setResultMessage] = useState("Keep Trying, Keep Improving!!!")
-  if(accuracy>80){
-    setResultMessage("You're a Pro!!!")
+  const [resultMessage, setResultMessage] = useState("Keep Trying, Keep Improving!!!");
+
+useEffect(() => {
+  if (accuracy > 80) {
+    setResultMessage("You're a Pro!!!");
+  } else if (accuracy <= 80 && accuracy > 50) {
+    setResultMessage("You're a Beginner!!! Keep practicing");
   }
-  else if(accuracy <=80 && accuracy >50){
-    setResultMessage("You're a Beginner!!!, Keep practicing")
-  }
+}, [accuracy]);
 
   return (
     <div className='home'>
