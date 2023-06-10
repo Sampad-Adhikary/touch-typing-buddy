@@ -5,11 +5,7 @@
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    color: #F6F1F1;
+    color: #FFC4C4;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -41,12 +37,13 @@
 
 .bigHeading {
     font-size: 3.5rem;
-    margin-bottom: 5%;
     margin: 0px auto;
+    margin-block-end: 5%;
     width: max-content;
     position: relative;
     letter-spacing: 0.25rem;
     color: #393646;
+    font-weight: 900;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
   }
@@ -60,6 +57,31 @@
     }
   }
   
+  #userInput{
+    width: 60vw;
+    height: 20vh;
+    background-color: #393646;
+    border-style:solid;
+    border-radius: 10px;
+    color: #F6F1F1;
+    font-size: 2rem;
+  }
+
+  #userInput:active,#userInput:focus{
+    border-color:#FFD93D;
+    outline: skyblue;
+    color: #FFD93D;
+    font-size: 2rem;
+  }
+
+  .headingSmall{
+    margin: 4%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    /* color: #393646; */
+    font-family: 'Montserrat', sans-serif;
+  }
+
   @media screen and (max-width: 768px) {
     .bigHeading {
       font-size: 0.75rem;
@@ -73,10 +95,50 @@
     left: 0;
     width: 0;
     height: 100%;
-    color: #fff;
-    -webkit-text-stroke: 0vw #fff;
-    border-right: 2px solid #fff;
+    color: #FFC4C4;
+    -webkit-text-stroke: 0vw #FFC4C4;
+    border-right: 2px solid #FFC4C4;
     overflow: hidden;
     animation: animate-text 6s linear infinite;
     font-family: 'Montserrat', sans-serif;
   }
+
+  .headingBig{
+    font-size: 3.5rem;
+    margin: 0px auto;
+    margin-block-end: 5%;
+    width: max-content;
+    position: relative;
+    letter-spacing: 0.25rem;
+    color: #FFC4C4;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .resultImg{
+    width: 10vw;
+  }
+
+  .resultBox{
+    padding-top: 3%;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .resultTxt{
+    font-size: 2rem;
+  }
+
+  .iconFoo{
+    margin: 10px;
+    margin-bottom: 0;
+    width: 30px;
+}
+
+.footerP{
+    margin-right: 2%;
+}
+
+.Footer{
+    margin-top: 12%;
+}

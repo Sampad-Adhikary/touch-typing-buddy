@@ -59,7 +59,7 @@ const KeyDisplay = () => {
 
   return (
     <div className='display'>
-        <h1 className='bigHeading' dataText='YOUR&nbsp;TYPING&nbsp;BUDDY.'>YOUR TYPING BUDDY</h1>
+        <h1 className='bigHeading' data-text="YOUR&nbsp;TYPING&nbsp;BUDDY.">YOUR TYPING BUDDY.</h1>
       <div className="row">
       <div className="col-1 display-key"></div>
       <div className="col-1 display-key"></div>

@@ -48,13 +48,10 @@ const KeyInput = () => {
 
   return (
     <div>
-      <div>Total Key Presses: {keyPressCount}</div>
-      <div>Entered Letter: {enteredLetter}</div>
-      <div>Match Count: {matchCount}</div>
-      <div>Remaining Time: {remainingTime} seconds</div>
+      <div><h2 className='headingSmall'>Remaining Time: {remainingTime} seconds</h2></div>
       <div>
         <form>
-          <input type="text" onKeyDown={handleKeyPress} />
+          <input id="userInput" type="text" onKeyDown={handleKeyPress} placeholder='Press the Keys you see highlighted...' />
         </form>
       </div>
     </div>
